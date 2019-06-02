@@ -7,6 +7,7 @@
 }
 
 body{
+	background: #fff;
 
 }
 
@@ -18,5 +19,38 @@ body{
 .cont-logo > img{
 	width: 100%;
 	height: 100%;
+}
 
-} 
+.cont-titulo{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.cont-titulo .titulo a{
+	font-size: 20px;
+	color: gray;
+}
+
+.cont-botones{
+	width: 200px;
+	margin: 10px auto; 
+	display: flex;
+	justify-content: space-around;
+}
+
+.cont-botones .boton-atras, .boton-actual, .boton-delante{
+	width: 40px;
+	height: 5px;
+	background: gray;
+	border-radius: 3px;
+	cursor: pointer;
+	border:1px solid transparent;
+}
+
+.cont-botones .boton-actual{
+	width: 30px;
+	height: 5px;
+	background: #333;
+}
+

@@ -1,10 +1,11 @@
 #menu-inicio ul li{
-	list-style:none; 
+	list-style:none;
+	margin-bottom: 10px; 
 }
 
 #menu-inicio ul li a{
 	color: gray;
-	font-size: 16px; 
+	font-size: 16px;
 }
 
 #menu-inicio ul li .selected{
@@ -23,8 +24,7 @@
 	}
 
 	#menu-inicio ul li{
-		display: inline-block;
-		flex-direction: row;
+		
 	}
 
 	#menu-inicio ul li a{

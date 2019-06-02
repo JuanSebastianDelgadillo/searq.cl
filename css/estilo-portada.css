@@ -14,6 +14,21 @@
 
 .columna-izq{
 	width: 25%;
+	position: relative;
+}
+
+.columna-izq .redes{
+	width: 100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 20px;
+}
+
+.columna-izq .redes img{
+	cursor: pointer;
+	
 }
 
 .columna-der{
