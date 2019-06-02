@@ -17,6 +17,7 @@
 	left:0;
 	height: 500px;
 	display: flex;
+	text-align: justify;
 }
 
 .contenedor-acercade #cont-de{
@@ -24,6 +25,8 @@
 	position: absolute;
 	left:150%;
 	height: 500px;
+	display: none;
+	text-align: justify;
 
 }
 
@@ -48,6 +51,20 @@
 	margin-top: 150px;
    vertical-align: bottom;
 	
+}
+
+@media screen and (max-width: 784px) {
+	#cont-acerca-1, #cont-acerca-2{
+		display: none;
+	}
+	#cont-acerca-3{
+		width: 100%;
+	}
+	.cont-acercade #cont-acerca-3{
+		margin-top: 0px;
+	   vertical-align: top;
+	
+	}
 }
 
 
