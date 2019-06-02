@@ -29,25 +29,23 @@ body{
 }
 .cont-titulo .titulo a{
 	font-size: 20px;
-	color: gray;
+	color: #333;
+	font-weight: bold;
 }
-
 .cont-botones{
 	width: 200px;
 	margin: 10px auto; 
 	display: flex;
 	justify-content: space-around;
 }
-
 .cont-botones .boton-atras, .boton-actual, .boton-delante{
 	width: 40px;
 	height: 5px;
-	background: gray;
+	background: #dedede;
 	border-radius: 3px;
 	cursor: pointer;
 	border:1px solid transparent;
 }
-
 .cont-botones .boton-actual{
 	width: 30px;
 	height: 5px;

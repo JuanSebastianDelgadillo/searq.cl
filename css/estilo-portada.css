@@ -18,10 +18,9 @@
 }
 
 .columna-izq .redes{
-	width: 100px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-around;
+	width: 50px;
+	left: 30%;
+	right: 50%;
 	position: absolute;
 	bottom: 20px;
 }
@@ -29,6 +28,9 @@
 .columna-izq .redes img{
 	cursor: pointer;
 	
+}
+.cont-bajo-redes{
+	display: none;
 }
 
 .columna-der{
@@ -50,5 +52,14 @@
 
 	.columna-der{
 		width: 100%;
+	}
+	.columna-izq > .redes{
+		display: none;
+	}
+
+	.cont-bajo-redes{
+		width: 50px;
+		margin: 20px auto;
+		display: block;
 	}
 }
