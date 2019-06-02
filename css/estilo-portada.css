@@ -1,0 +1,39 @@
+#proy-portada > div > img{
+	margin-right:2px;
+	margin-bottom: 2px;
+	width: 100%;
+}
+
+.contenedor-columnas{
+	width: 100%;
+	display: flex;
+}
+.columna-portada{
+	width: 33.3%;
+}
+
+.columna-izq{
+	width: 25%;
+}
+
+.columna-der{
+	width: 75%;
+	display: flex;
+}
+
+.columna-der .columna-portada img{
+	width: 100%;
+}
+
+@media screen and (max-width: 784px) {
+	.contenedor-columnas{
+		display: block;
+	}
+	.columna-izq{
+		width: 100%;
+	}
+
+	.columna-der{
+		width: 100%;
+	}
+}
