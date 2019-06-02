@@ -1,0 +1,54 @@
+
+.contenedor-acercade{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	position: relative;
+	-webkit-transition: all 1s ease;
+  	-moz-transition: all 1s ease;
+  	-o-transition: all 1s ease;
+  	-ms-transition: all 1s ease;
+  	transition: all 1s ease;
+}
+
+.contenedor-acercade #cont-acerca{
+	width: 100%;
+	position: absolute;
+	left:0;
+	height: 500px;
+	display: flex;
+}
+
+.contenedor-acercade #cont-de{
+	width: 100%;
+	position: absolute;
+	left:150%;
+	height: 500px;
+
+}
+
+.cont-acercade .cont-acerca-1{
+	width: 33.3%;
+   /*border:1px solid gray;*/
+	
+}
+.cont-acercade #cont-acerca-1{
+   margin-bottom: 50px;
+   justify-content: center;
+   align-items: center;
+	
+}
+.cont-acercade #cont-acerca-2{
+	margin-top: 100px;
+   justify-content: center;
+   align-items: center;
+	
+}
+.cont-acercade #cont-acerca-3{
+	margin-top: 150px;
+   vertical-align: bottom;
+	
+}
+
+
+					
