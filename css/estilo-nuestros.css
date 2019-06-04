@@ -1,0 +1,42 @@
+.contenedor-nuestros{
+	width: 100%;
+	display: flex;
+}
+
+.cont-servicios{
+	width: 65%;
+	display: inline-block;
+	/*border:1px solid red;*/
+	background: #F6F6F6;
+}
+.servicios{
+	width: 50%;
+	height: 250px;
+	float: left;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.servicios table{
+	width: 80%;
+	text-align: center; 
+}
+
+.servicios table th{
+	font-weight: bold !important;
+}
+
+.servicios-imagen{
+	background-image: url("../images/imagenes/fondo_gris.png");
+	background-repeat: no-repeat;
+	background-size: 50% 100%; 
+	width: 35%;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.servicios-imagen img{
+	width: 80%;
+}
