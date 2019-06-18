@@ -16,7 +16,17 @@ $(document).ready(function(){
          e.preventDefault();
         var codigo = "#nuestros";
          $("HTML, BODY").animate({ scrollTop: $(codigo).offset().top }, 1500); 
-     }); 
+     });
+     $(".ancla_proyectos").on('click', function(e) {
+         e.preventDefault();
+        var codigo = "#proyectos";
+         $("HTML, BODY").animate({ scrollTop: $(codigo).offset().top }, 1500); 
+     });
+     $(".ancla_contacto").on('click', function(e) {
+         e.preventDefault();
+        var codigo = "#contacto";
+         $("HTML, BODY").animate({ scrollTop: $(codigo).offset().top }, 1500); 
+     });   
 
 });
 

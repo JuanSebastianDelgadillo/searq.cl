@@ -1,0 +1,35 @@
+.contenedor-contacto{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contacto{
+	width: 50%;
+	margin: 1px solid gray;
+	padding: 30px;
+}
+
+.copyright{
+	width: 100%;
+	background: #141414;
+	padding: 30px;
+	color: #dedede;
+	text-align: center;
+}
+
+.contacto iframe{
+	width: 100%;
+	min-height: 400px;
+
+}
+
+#resultado{
+	text-align: center;
+}
+
+@media screen and (max-width: 784px) {
+	.contacto{
+	width: 100%;
+	}
+}

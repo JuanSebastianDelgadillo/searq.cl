@@ -1,0 +1,137 @@
+.contenedor-proyectos-destacados{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow :hidden;
+	position: relative;
+
+
+}
+.contenedor-proyectos-destacados-1{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	
+}
+.contenedor-proyectos-destacados-2{
+	width: 100%;
+	float: left;
+	position: absolute;
+	left: 200%;
+}
+
+.contenedor-proyectos-destacados-3{
+	width: 100%;
+	background: green;
+	float: left;
+	position: absolute;
+	left: 300%;
+}
+
+.botones-grandes{
+	width: 100%;
+	left: 0px;
+	top: 30%;
+	position: absolute;
+	cursor: pointer;
+}
+
+.botones-grandes .boton-izq-grande{
+	float: left;
+	opacity: 0.1;
+	
+}
+
+.botones-grandes .boton-der-grande{
+	float: right;
+	opacity: 0.3;
+}
+
+.botones-grandes .boton-der-grande:hover{
+	opacity: 1;
+}
+
+.botones-grandes .boton-izq-grande:hover{
+	opacity: 1;
+}
+
+.cont-proy-dest{
+	width: 50%;
+	
+}
+
+#cont-proy-dest-1 img, #cont-proy-dest-4 img{
+	width: 100%;
+}
+
+#cont-proy-dest-2, #cont-proy-dest-3, #cont-proy-dest-5{
+	background: #141414;
+	padding: 30px;
+	color: #dedede;
+}
+
+#cont-proy-dest-5{
+	display: none;
+}
+
+#cont-proy-dest-2 h3, #cont-proy-dest-3 h3, #cont-proy-dest-5 h3{
+	text-align: center;
+	font-size: 18px;
+}
+
+#cont-proy-dest-2 p, #cont-proy-dest-3 p, #cont-proy-dest-5 p{
+	text-align: justify;
+}
+
+.contenedor-de-proyectos{
+	flex-wrap: wrap;
+
+
+}
+
+.contenedor-de-proyectos .bloq-proyectos{
+	width: 200px;
+	margin: 5px;
+	float: left;
+}
+
+.contenedor-de-proyectos .bloq-proyectos img{
+	width: 100%;
+}
+
+.colum-proy{
+	width: 100%;
+	display: inline-flex;
+}
+
+.colum-proy .colum-proy-1, .colum-proy .colum-proy-2, .colum-proy .colum-proy-3, .colum-proy .colum-proy-4{
+	width: 25%;
+	overflow: hidden;
+}
+
+
+.colum-proy-1 img, .colum-proy-2 img, .colum-proy-3 img, .colum-proy-4 img{
+	width: 100%;
+	padding: 5px;
+}
+
+.colum-proy-1 img:hover, .colum-proy-2 img:hover, .colum-proy-3 img:hover, .colum-proy-4 img:hover{
+	-webkit-transition:scale(1.25);
+	-moz-transition:scale(1.25);
+	-o-transition:scale(1.25);
+	-ms-transition:scale(1.25);
+
+}
+
+@media screen and (max-width: 784px) {
+	.cont-proy-dest{
+		width: 100%;
+	
+	}
+	#cont-proy-dest-3{
+		display: none;
+	}
+	#cont-proy-dest-5{
+		display: block;
+	}
+}

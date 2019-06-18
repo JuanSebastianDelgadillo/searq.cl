@@ -1,18 +1,21 @@
 .contenedor-nuestros{
 	width: 100%;
 	display: flex;
+
 }
 
 .cont-servicios{
+	
 	width: 65%;
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
 	/*border:1px solid red;*/
 	background: #F6F6F6;
 }
 .servicios{
+
 	width: 50%;
 	height: 250px;
-	float: left;
 	display: flex;
    justify-content: center;
    align-items: center;
@@ -39,4 +42,18 @@
 
 .servicios-imagen img{
 	width: 80%;
+}
+
+@media screen and (max-width: 784px) {
+	.servicios-imagen{
+		display: none;
+	}
+	.cont-servicios{
+		width: 100%;
+		display: block;
+	}
+	.servicios{
+		width: 100%;
+		float: none;
+	}
 }
