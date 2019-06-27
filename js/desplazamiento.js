@@ -6,9 +6,9 @@ $(document).ready(function(){
        $("HTML, BODY").animate({ scrollTop: 0 }, 1500); 
     }); 
 
-    $(".ancla_acercade").on('click', function(e) {
+    $(".ancla_obras").on('click', function(e) {
          e.preventDefault();
-        var codigo = "#acercade";
+        var codigo = "#obras";
          $("HTML, BODY").animate({ scrollTop: $(codigo).offset().top }, 1500); 
      });
 

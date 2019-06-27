@@ -1,5 +1,13 @@
 $(document).ready(function(){	
 
+	$("#btn-proy-s").click(function() {
+    	
+		 // $("#contenedor-proyectos-destacados-2").animate({left:'0px'},500);
+		 // $("#contenedor-proyectos-destacados-1").animate({left:'-100%'},500);
+		 alert("move");
+
+	});
+
 	$("#boton-1-right").click(function() {
     	
 		 $("#contenedor-proyectos-destacados-2").animate({left:'0px'},500);

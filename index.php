@@ -33,23 +33,21 @@
 	<body>
 		<a id="top"></a>
 		<div class="container" id="container">
-			<div class="row">
-				<div class="cont-logo">
-					<img src="images/logos/Recurso1-4.png" align="center">
-				</div>
-			</div>
 			<div class="contenedor-columnas">
 				<div class="columna-izq" id="menu-inicio">
+					<div class="cont-logo">
+						<img src="images/logos/Recurso1-4.png" align="center">
+					</div>
 					<ul>
 						<li><a href="#" class="selected" id="btn_inicio">INICIO</a></li>
-						<li><a href="#" class="ancla_acercade">ACERCA DE</a></li>
-						<li><a href="#" class="ancla_nuestros">NUESTROS SERVICIOS</a></li>
+						<li><a href="#" class="ancla_obras">OBRAS</a></li>
 						<li><a href="#" class="ancla_proyectos">PROYECTOS</a></li>
+						<li><a href="#" class="ancla_nuestros">NUESTROS SERVICIOS</a></li>
 						<li><a href="#" class="ancla_contacto">CONTACTO</a></li>
 					</ul>
 					<div class="redes">
-						<img src="images/logos/icono-instagram.png">
-						<img src="images/logos/icono-phone.png">
+						<a target="_blank" href="https://instagram.com/se_arq?igshid=tciakrhdflh5"><img src="images/logos/icono-instagram.png"></a>
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=+56998857628&text=Buenas,%20deseo%20contactarme%20para obtener%20más%20información"><img src="images/logos/icono-phone.png"></a>
 					</div>
 				</div>
 				<div class="columna-der">
@@ -74,10 +72,101 @@
 					</div>
 				</div>
 			</div>
+			
+			<!-- Contenedor titulo obras -->
+			<div class="cont-titulo">
+				<div class="titulo">
+					<a href="#" class="ancla_obras">obras</a>
+					<a id="obras"></a>
+				</div>
+				<div class="cont-botones">
+					
+					<div class="boton-actual" id="bot-acerca-actual"></div>
+					<div class="boton-atras" id="bot-acerca-atras"></div>
+					<div class="boton-delante" id="bot-acerca-delante"></div>
+				</div>
+			</div>
+			<!-- Contenedor titulo obras -->
+			<div class="contenedor-proyectos-destacados" id="contenedor-proyectos-destacados">
+				<div class="contenedor-proyectos-destacados-1" id="contenedor-proyectos-destacados-1">
+					<div class="cont-de-letras">
+						<div class="proy-s">
+							<img src="images/imagenes/s_inactive.png" id="btn-proy-s">
+						</div>
+						<div class="proy-s">
+							<img src="images/imagenes/m_inactive.png" id="btn-proy-m">
+						</div>
+						<div class="proy-s">
+							<img src="images/imagenes/l_inactive.png" id="btn-proy-l">
+						</div>
+					</div>
+					
+				</div>
+				<div class="contenedor-proyectos-destacados-2" id="contenedor-proyectos-destacados-2">
+					<div class="botones-grandes-izq">
+						<div class="boton-izq-grande">
+							<img src="images/logos/icon-arrow-left.png" id="boton-2-left">
+						</div>
+					</div>
+					<div class="contenedor-de-proyectos">
+					<?php
+
+						// $data = file_get_contents("json/proyectos.json");
+						$data = file_get_contents("json/proyectos.json");
+						$con = utf8_encode($data);
+						$datos = json_decode($data,true);
+
+						$proyectos = $datos["proyectos"];
+						?>
+					<div class="colum-proy">
+						<div class="colum-proy-1">
+							<div class="texto-oculto" style="overflow: hidden;">
+								<label id="txt-proy1"><?php echo $proyectos["proy1"]["nombre"]; ?></label>
+								<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
+							</div>
+							
+							<img src="<?php echo $proyectos["proy5"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-2">
+							<img src="<?php echo $proyectos["proy2"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy6"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy9"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-3">
+							<img src="<?php echo $proyectos["proy3"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy7"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-4">
+							<img src="<?php echo $proyectos["proy4"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
+						</div>
+					</div>
+
+					?>
+				
+					</div>
+				</div>
+				<div class="contenedor-proyectos-destacados-3" id="contenedor-proyectos-destacados-3">
+					<div class="botones-grandes">
+						<div class="boton-izq-grande">
+							<img src="images/logos/icon-arrow-left.png" id="boton-3-left">
+						</div>
+					</div>
+					Sitio 3
+					<p style="height: 500px;"></p>
+				</div>
+				
+
+			</div>
+			<!-- Icono top -->
+			<div class="ancla-top"><img class="button-top" src="images/logos/icon-top.png"></div>
+			<!-- Icono top -->
 			<div class="cont-titulo" id="contenedor-completo-acercade">
 				<div class="titulo">
-					<a href="#" class="ancla_acercade">acerca de</a>
-					<a id="acercade"></a>
+					<a href="#" class="ancla_proyectos">proyectos</a>
+					<a id="proyectos"></a>
 				</div>
 				<div class="cont-botones">
 					<div class="boton-actual" id="bot-acerca-actual"></div>
@@ -104,6 +193,7 @@
 			<!-- Icono top -->
 			<div class="ancla-top"><img class="button-top" src="images/logos/icon-top.png"></div>
 			<!-- Icono top -->
+			
 			<!-- Contenedor titulo nuestros servicios -->
 			<div class="cont-titulo">
 				<div class="titulo">
@@ -165,107 +255,6 @@
 			<!-- Icono top -->
 			<div class="ancla-top"><img class="button-top" src="images/logos/icon-top.png"></div>
 			<!-- Icono top -->
-			<!-- Contenedor titulo nuestros servicios -->
-			<div class="cont-titulo">
-				<div class="titulo">
-					<a href="#" class="ancla_proyectos">proyectos destacados</a>
-					<a id="proyectos"></a>
-				</div>
-				<div class="cont-botones">
-					
-					<div class="boton-actual" id="bot-acerca-actual"></div>
-					<div class="boton-atras" id="bot-acerca-atras"></div>
-					<div class="boton-delante" id="bot-acerca-delante"></div>
-				</div>
-			</div>
-			<!-- Contenedor titulo nuestros servicios -->
-			<div class="contenedor-proyectos-destacados" id="contenedor-proyectos-destacados">
-				<div class="contenedor-proyectos-destacados-1" id="contenedor-proyectos-destacados-1">
-					<div class="botones-grandes">
-						<div class="boton-der-grande">
-							<img src="images/logos/icon-arrow-right.png" id="boton-1-right">
-						</div>
-					</div>
-					<div class="cont-proy-dest" id="cont-proy-dest-1">
-					<img src="images/imagenes/11.png">
-					</div>
-					<div class="cont-proy-dest" id="cont-proy-dest-2">
-						<h2>proyecto destacado 1</h2>
-						Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
-					</div>
-					<div class="cont-proy-dest" id="cont-proy-dest-3">
-						<h2>proyecto destacado 2</h2>
-						<p>
-						Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor.
-						</p>
-					</div>
-					<div class="cont-proy-dest" id="cont-proy-dest-4">
-						<img src="images/imagenes/13.png">
-					</div>
-					<div class="cont-proy-dest" id="cont-proy-dest-5">
-						<h2>proyecto destacado 2</h2>
-						<p>
-						Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor.
-						</p>
-					</div>
-				</div>
-				<div class="contenedor-proyectos-destacados-2" id="contenedor-proyectos-destacados-2">
-					<div class="botones-grandes">
-						<div class="boton-izq-grande">
-							<img src="images/logos/icon-arrow-left.png" id="boton-2-left">
-						</div>
-					</div>
-					<div class="contenedor-de-proyectos">
-					<?php
-
-						// $data = file_get_contents("json/proyectos.json");
-						$data = file_get_contents("json/proyectos.json");
-						$con = utf8_encode($data);
-						$datos = json_decode($data,true);
-
-						$proyectos = $datos["proyectos"];
-						?>
-					<div class="colum-proy">
-						<div class="colum-proy-1">
-							<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
-							<img src="<?php echo $proyectos["proy5"]["foto_portada"]; ?>">
-							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
-						</div>
-						<div class="colum-proy-2">
-							<img src="<?php echo $proyectos["proy2"]["foto_portada"]; ?>">
-							<img src="<?php echo $proyectos["proy6"]["foto_portada"]; ?>">
-							<img src="<?php echo $proyectos["proy9"]["foto_portada"]; ?>">
-						</div>
-						<div class="colum-proy-3">
-							<img src="<?php echo $proyectos["proy3"]["foto_portada"]; ?>">
-							<img src="<?php echo $proyectos["proy7"]["foto_portada"]; ?>">
-							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
-						</div>
-						<div class="colum-proy-4">
-							<img src="<?php echo $proyectos["proy4"]["foto_portada"]; ?>">
-							<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
-						</div>
-					</div>
-
-					?>
-				
-					</div>
-				</div>
-				<div class="contenedor-proyectos-destacados-3" id="contenedor-proyectos-destacados-3">
-					<div class="botones-grandes">
-						<div class="boton-izq-grande">
-							<img src="images/logos/icon-arrow-left.png" id="boton-3-left">
-						</div>
-					</div>
-					Sitio 3
-					<p style="height: 500px;"></p>
-				</div>
-				
-
-			</div>
-			<!-- Icono top -->
-			<div class="ancla-top"><img class="button-top" src="images/logos/icon-top.png"></div>
-			<!-- Icono top -->
 			<!-- Contenedor titulo contacto -->
 			<div class="cont-titulo">
 				<div class="titulo">
@@ -309,16 +298,13 @@
 					<br><br>
 					<p id="resultado"></p>
 				</div>
-				<div class="contacto">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4296943399368!2d-71.53003068503892!3d-32.939662980923174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDU2JzIyLjgiUyA3McKwMzEnNDAuMiJX!5e0!3m2!1ses!2scl!4v1560117650936!5m2!1ses!2scl" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
 			</div>
 			<!-- Icono top -->
 			<div class="ancla-top"><img class="button-top" src="images/logos/icon-top.png"></div>
 			<!-- Icono top -->
 			<div class="row">
-				<div class="cont-logo">
-					<img src="images/logos/Recurso1-2.png" align="center">
+				<div class="cont_logo_footer">
+					<img src="images/logos/Recurso1-2.png">
 				</div>
 			</div>
 			

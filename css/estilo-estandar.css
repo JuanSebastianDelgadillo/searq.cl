@@ -12,12 +12,12 @@ body{
 }
 
 .cont-logo{
-	max-width: 30%;
-	margin: 30px auto;
+	width: 100%;
+	margin: 20px auto;
 }
 
 .cont-logo > img{
-	width: 100%;
+	width: 85%;
 	height: 100%;
 }
 
@@ -27,6 +27,14 @@ body{
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+.cont_logo_footer{
+	width: auto;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+
 .cont-titulo .titulo a{
 	font-size: 20px;
 	color: #333;
@@ -62,5 +70,39 @@ body{
 .ancla-top img{
 	cursor: pointer;
 	float: right;
+}
+
+.botones-grandes-izq{
+	width: 100px;
+	left: 0%;
+	top: 30%;
+	position: absolute;
+}
+.botones-grandes-der{
+	width: 100px;
+	right: 0%;
+	top: 30%;
+	position: absolute;
+}
+
+.botones-grandes-izq .boton-izq-grande{
+	float: left;
+	opacity: 0.3;
+	cursor: pointer;
+	
+}
+
+.botones-grandes-der .boton-der-grande{
+	float: right;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.botones-grandes-der .boton-der-grande:hover{
+	opacity: 1;
+}
+
+.botones-grandes-izq .boton-izq-grande:hover{
+	opacity: 1;
 }
 
