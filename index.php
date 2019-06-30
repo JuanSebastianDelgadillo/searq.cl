@@ -105,14 +105,14 @@
 				<div class="contenedor-proyectos-destacados-2" id="contenedor-proyectos-destacados-2">
 					<div class="botones-grandes-izq">
 						<div class="boton-izq-grande">
-							<img src="images/logos/icon-arrow-left.png" id="boton-2-left">
+							<img src="images/logos/icon-arrow-left.png" id="boton-1-left">
 						</div>
 					</div>
 					<div class="contenedor-de-proyectos">
 					<?php
 
 						// $data = file_get_contents("json/proyectos.json");
-						$data = file_get_contents("json/proyectos.json");
+						$data = file_get_contents("json/proyectos_s.json");
 						$con = utf8_encode($data);
 						$datos = json_decode($data,true);
 
@@ -149,13 +149,96 @@
 					</div>
 				</div>
 				<div class="contenedor-proyectos-destacados-3" id="contenedor-proyectos-destacados-3">
-					<div class="botones-grandes">
+					<div class="botones-grandes-izq">
+						<div class="boton-izq-grande">
+							<img src="images/logos/icon-arrow-left.png" id="boton-2-left">
+						</div>
+					</div>
+										<div class="contenedor-de-proyectos">
+					<?php
+
+						// $data = file_get_contents("json/proyectos.json");
+						$data = file_get_contents("json/proyectos_m.json");
+						$con = utf8_encode($data);
+						$datos = json_decode($data,true);
+
+						$proyectos = $datos["proyectos"];
+						?>
+					<div class="colum-proy">
+						<div class="colum-proy-1">
+							<div class="texto-oculto" style="overflow: hidden;">
+								<label id="txt-proy1"><?php echo $proyectos["proy1"]["nombre"]; ?></label>
+								<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
+							</div>
+							
+							<img src="<?php echo $proyectos["proy5"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-2">
+							<img src="<?php echo $proyectos["proy2"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy6"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy9"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-3">
+							<img src="<?php echo $proyectos["proy3"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy7"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-4">
+							<img src="<?php echo $proyectos["proy4"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
+						</div>
+					</div>
+
+					?>
+				
+					</div>
+				</div>
+				<div class="contenedor-proyectos-destacados-4" id="contenedor-proyectos-destacados-4">
+					<div class="botones-grandes-izq">
 						<div class="boton-izq-grande">
 							<img src="images/logos/icon-arrow-left.png" id="boton-3-left">
 						</div>
 					</div>
-					Sitio 3
-					<p style="height: 500px;"></p>
+										<div class="contenedor-de-proyectos">
+					<?php
+
+						// $data = file_get_contents("json/proyectos.json");
+						$data = file_get_contents("json/proyectos_l.json");
+						$con = utf8_encode($data);
+						$datos = json_decode($data,true);
+
+						$proyectos = $datos["proyectos"];
+						?>
+					<div class="colum-proy">
+						<div class="colum-proy-1">
+							<div class="texto-oculto" style="overflow: hidden;">
+								<label id="txt-proy1"><?php echo $proyectos["proy1"]["nombre"]; ?></label>
+								<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
+							</div>
+							
+							<img src="<?php echo $proyectos["proy5"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-2">
+							<img src="<?php echo $proyectos["proy2"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy6"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy9"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-3">
+							<img src="<?php echo $proyectos["proy3"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy7"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy8"]["foto_portada"]; ?>">
+						</div>
+						<div class="colum-proy-4">
+							<img src="<?php echo $proyectos["proy4"]["foto_portada"]; ?>">
+							<img src="<?php echo $proyectos["proy1"]["foto_portada"]; ?>">
+						</div>
+					</div>
+
+					?>
+				
+					</div>
 				</div>
 				
 

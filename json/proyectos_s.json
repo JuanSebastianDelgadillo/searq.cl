@@ -1,0 +1,137 @@
+{
+    "proyectos":{
+        "proy1":{
+            "ID": 1,
+            "nombre": "Casa Piriz",
+            "descripcion": "Casa Piriz",
+            "foto_portada": "images/proyectos/L-large/casa_piriz/1.JPG",
+            "fotos": [
+             "images/proyectos/L-large/casa_piriz/2.JPG",
+             "images/proyectos/L-large/casa_piriz/3.JPG",
+             "images/proyectos/L-large/casa_piriz/4.JPG"
+            ]
+        },
+        "proy2":{
+            "ID": 2,
+            "nombre": "Colmena Viña del Mar",
+            "descripcion": "Colmena Viña del Mar",
+            "foto_portada": "images/proyectos/L-large/colmena_vina/1.jpg",
+            "fotos": [
+             "images/proyectos/L-large/colmena_vina/2.jpg",
+             "images/proyectos/L-large/colmena_vina/3.jpg",
+             "images/proyectos/L-large/colmena_vina/4.jpg",
+             "images/proyectos/L-large/colmena_vina/5.jpg",
+             "images/proyectos/L-large/colmena_vina/6.jpg",
+             "images/proyectos/L-large/colmena_vina/7.jpg"
+            ]
+        },
+        "proy3":{
+            "ID": 3,
+            "nombre": "Constructora Contex",
+            "descripcion": "2009-09-17",
+            "foto_portada": "images/proyectos/L-large/constructora_contex/08.jpg",
+            "fotos": [
+             "images/proyectos/L-large/constructora_contex/01.jpg",
+             "images/proyectos/L-large/constructora_contex/02.jpg",
+             "images/proyectos/L-large/constructora_contex/03.jpg",
+             "images/proyectos/L-large/constructora_contex/04.jpg",
+             "images/proyectos/L-large/constructora_contex/05.jpg",
+             "images/proyectos/L-large/constructora_contex/07.jpg",
+             "images/proyectos/L-large/constructora_contex/09.jpg",
+             "images/proyectos/L-large/constructora_contex/12.jpg",
+             "images/proyectos/L-large/constructora_contex/14.jpg",
+             "images/proyectos/L-large/constructora_contex/16.jpg",
+             "images/proyectos/L-large/constructora_contex/17.jpg"
+            ]
+        },
+        "proy4":{
+            "ID": 4,
+            "nombre": "Oficinas Excon",
+            "descripcion": "Oficinas Excon",
+            "foto_portada": "images/proyectos/L-large/oficinas_excon/01.jpg",
+            "fotos": [
+             "images/proyectos/L-large/oficinas_excon/02.jpg",
+             "images/proyectos/L-large/oficinas_excon/03.jpg",
+             "images/proyectos/L-large/oficinas_excon/04.jpg"
+            ]
+        },
+        "proy5":{
+            "ID": 5,
+            "nombre": "Talleres Excon",
+            "descripcion": "Talleres Excon",
+            "foto_portada": "images/proyectos/L-large/talleres_excon/02.jpg",
+            "fotos": [
+             "images/proyectos/L-large/talleres_excon/05.jpg",
+             "images/proyectos/L-large/talleres_excon/03.jpg",
+             "images/proyectos/L-large/talleres_excon/04.jpg",
+             "images/proyectos/L-large/talleres_excon/01.jpg",
+             "images/proyectos/L-large/talleres_excon/06.jpg",
+             "images/proyectos/L-large/talleres_excon/07.jpg",
+             "images/proyectos/L-large/talleres_excon/08.jpg",
+             "images/proyectos/L-large/talleres_excon/09.jpg"
+            ]
+        },
+         "proy6":{
+            "ID": 6,
+            "nombre": "Capilla El Roble",
+            "descripcion": "Capilla El Roble",
+            "foto_portada": "images/proyectos/M-medium/capilla_el_roble/01.jpg",
+            "fotos": [
+                "images/proyectos/M-medium/capilla_el_roble/01.jpg",
+                "images/proyectos/M-medium/capilla_el_roble/02.jpg",
+                "images/proyectos/M-medium/capilla_el_roble/03.jpg",
+                "images/proyectos/M-medium/capilla_el_roble/04.jpg",
+                "images/proyectos/M-medium/capilla_el_roble/05.jpg",
+                "images/proyectos/M-medium/capilla_el_roble/06.jpg",
+                "images/proyectos/M-medium/capilla_el_roble/07.jpg",
+                "images/proyectos/M-medium/capilla_el_roble/09.jpg"
+            ]
+        },
+        "proy7":{
+            "ID": 7,
+            "nombre": "Capilla El Roble",
+            "descripcion": "Capilla El Roble",
+            "foto_portada": "images/proyectos/M-medium/casa_cohelemu/01.jpg",
+            "fotos": [
+                "images/proyectos/M-medium/casa_cohelemu/01.jpg",
+                "images/proyectos/M-medium/casa_cohelemu/02.jpg",
+                "images/proyectos/M-medium/casa_cohelemu/03.jpg",
+                "images/proyectos/M-medium/casa_cohelemu/04.jpg",
+                "images/proyectos/M-medium/casa_cohelemu/05.jpg"
+                
+            ]
+        },
+        "proy8":{
+            "ID": 8,
+            "nombre": "Casa Con Con",
+            "descripcion": "Casa Con Con",
+            "foto_portada": "images/proyectos/M-medium/casa_concon/01.jpg",
+            "fotos": [
+                "images/proyectos/M-medium/casa_concon/01.jpg",
+                "images/proyectos/M-medium/casa_concon/02.jpg",
+                "images/proyectos/M-medium/casa_concon/03.jpg",
+                "images/proyectos/M-medium/casa_concon/04.jpg",
+                "images/proyectos/M-medium/casa_concon/05.jpg",
+                "images/proyectos/M-medium/casa_concon/06.jpg",
+                "images/proyectos/M-medium/casa_concon/07.jpg",
+                "images/proyectos/M-medium/casa_concon/08.jpg"
+
+                
+            ]
+        },
+        "proy9":{
+            "ID": 9,
+            "nombre": "Clínica Lauquén",
+            "descripcion": "Clinica Lauquen",
+            "foto_portada": "images/proyectos/M-medium/clinica_lauquen/01.jpg",
+            "fotos": [
+                "images/proyectos/M-medium/clinica_lauquen/01.jpg",
+                "images/proyectos/M-medium/clinica_lauquen/02.jpg",
+                "images/proyectos/M-medium/clinica_lauquen/03.jpg",
+                "images/proyectos/M-medium/clinica_lauquen/04.jpg"
+
+                
+            ]
+        }
+    }
+}

@@ -75,13 +75,13 @@ body{
 .botones-grandes-izq{
 	width: 100px;
 	left: 0%;
-	top: 30%;
+	top: 15%;
 	position: absolute;
 }
 .botones-grandes-der{
 	width: 100px;
 	right: 0%;
-	top: 30%;
+	top: 20%;
 	position: absolute;
 }
 

@@ -28,6 +28,11 @@
 .cont-de-letras .proy-s img{
 	width: 100%;
 	cursor: pointer;
+	transition: transform .2s;
+}
+
+.cont-de-letras .proy-s img:hover{
+	transform: scale(1.1);
 }
 
 
@@ -43,7 +48,15 @@
 	background: green;
 	float: left;
 	position: absolute;
-	left: 300%;
+	left: 200%;
+}
+
+.contenedor-proyectos-destacados-4{
+	width: 100%;
+	background: green;
+	float: left;
+	position: absolute;
+	left: 200%;
 }
 
 .cont-proy-dest{
